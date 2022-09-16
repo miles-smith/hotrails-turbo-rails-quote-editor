@@ -5,5 +5,7 @@
     <h1>Edit <%= Quote.model_name.human.downcase %></h1>
   </div>
 
-  <%= render "form", quote: @quote %>
+  <%= turbo_frame_tag @quote do %>
+    <%= render "form", quote: @quote %>
+  <% end %>
 </main>
