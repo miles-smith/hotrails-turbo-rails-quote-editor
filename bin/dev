@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-if ! foreman version &> /dev/null
+if ! overmind --version &> /dev/null
 then
-  echo "Installing foreman..."
-  gem install foreman
+  echo "Installing Overmind..."
+  gem install overmind
 fi
 
-foreman start -f Procfile.dev "$@"
+overmind start -f Procfile.dev "$@"
