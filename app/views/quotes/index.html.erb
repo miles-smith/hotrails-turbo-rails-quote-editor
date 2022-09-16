@@ -1,0 +1,8 @@
+<main class="container">
+  <div class="header">
+    <h1><%= Quote.model_name.human.pluralize %></h1>
+    <%= link_to "New #{Quote.model_name.human.downcase}", new_quote_path, class: "btn btn--primary" %>
+  </div>
+
+  <%= render @quotes %>
+</main>
