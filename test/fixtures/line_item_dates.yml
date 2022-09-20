@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+today:
+  quote: first
+  date: <%= Time.zone.today %>
+
+next_week:
+  quote: first
+  date: <%= Time.zone.today + 1.week %>

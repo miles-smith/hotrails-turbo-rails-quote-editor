@@ -35,3 +35,5 @@ en:
     labels:
       quote:
         name: Name
+      line_item_date:
+        date: Date
