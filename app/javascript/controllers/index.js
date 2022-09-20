@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
+import DomRemovalsController from "./dom_removals_controller"
+application.register("dom-removals", DomRemovalsController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
