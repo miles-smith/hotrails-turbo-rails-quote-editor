@@ -38,3 +38,6 @@ en:
       line_item_date:
         create: Create date
         update: Update date
+      line_item:
+        create: Create item
+        update: Update item
