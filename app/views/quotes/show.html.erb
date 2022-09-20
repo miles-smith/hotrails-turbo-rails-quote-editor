@@ -1,3 +1,7 @@
+<%
+  new_line_item_date = @quote.line_item_dates.new
+%>
+
 <main class="container">
   <%= link_to sanitize("&larr; Back to quotes"), quotes_path %>
 
@@ -6,8 +10,12 @@
       <%= @quote.name %>
     </h1>
 
-    <%= link_to "New date", new_quote_line_item_date_path(@quote), class: "btn btn--primary" %>
+    <%= link_to "New date", new_quote_line_item_date_path(@quote), class: "btn btn--primary", data: { turbo_frame: dom_id(new_line_item_date) } %>
   </div>
 
-  <%= render @line_item_dates, quote: @quote %>
+  <%= turbo_frame_tag new_line_item_date %>
+
+  <%= turbo_frame_tag :line_item_dates do %>
+    <%= render @line_item_dates, quote: @quote %>
+  <% end %>
 </main>
