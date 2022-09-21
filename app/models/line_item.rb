@@ -8,4 +8,8 @@ class LineItem < ApplicationRecord
   validates :quantity,   numericality: { only_integer: true, greater_than: 0 }
 
   delegate :quote, to: :line_item_date
+
+  def total_price
+    quantity * unit_price
+  end
 end
