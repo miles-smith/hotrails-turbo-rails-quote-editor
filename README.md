@@ -9,7 +9,7 @@ Demo application leveraging Rails + Hotwire.
 ### Dependencies
 
 * Ruby (3.0.3)
-* PostgeSQL
+* PostgreSQL
 * [Hivemind](https://github.com/DarthSim/hivemind)
 * [Overmind](https://github.com/DarthSim/overmind)
 
