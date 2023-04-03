@@ -10,7 +10,7 @@ Demo application leveraging Rails + Hotwire.
 
 * Ruby (3.0.3)
 * PostgeSQL
-* [Hievmind](https://github.com/DarthSim/hivemind)
+* [Hivemind](https://github.com/DarthSim/hivemind)
 * [Overmind](https://github.com/DarthSim/overmind)
 
 ### Executing program
