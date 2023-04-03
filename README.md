@@ -1,24 +1,38 @@
-# README
+# Hotrails Quote Editor Demo App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+Demo application leveraging Rails + Hotwire.
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+### Dependencies
 
-* Configuration
+* Ruby (3.0.3)
+* PostgeSQL
+* [Hievmind](https://github.com/DarthSim/hivemind)
+* [Overmind](https://github.com/DarthSim/overmind)
 
-* Database creation
+### Executing program
 
-* Database initialization
+#### Configure database.yml
+Copy `config/database.yml.sample` to `config/databse.yml` and configure local connections as you would with any Rails application.
 
-* How to run the test suite
+#### Gem dependencies and database setup
+Use the `bin/setup` binstub to install the project's gem dependencies and create local development/test databases.
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Launch application
+Launch the application by using the `bin/dev` binstub.
 
-* Deployment instructions
+## Version History
 
-* ...
+See CHANGELOG.md
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+* [Hotrails.dev](https://www.hotrails.dev)
+* [Turbo Rails Tutorial](https://www.hotrails.dev/turbo-rails)
